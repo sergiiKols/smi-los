@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import AuthProvider from '@/components/AuthProvider'
 
 const inter = Inter({ subsets: ['latin', 'cyrillic'] })
 
@@ -19,8 +20,10 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className={inter.className}>
-        {children}
-        <ToastContainer position="top-right" autoClose={3000} />
+        <AuthProvider>
+          {children}
+          <ToastContainer position="top-right" autoClose={3000} />
+        </AuthProvider>
       </body>
     </html>
   )

@@ -15,6 +15,7 @@ import {
 import DashboardStats from '@/components/DashboardStats'
 import RecentArticles from '@/components/RecentArticles'
 import ActivityLog from '@/components/ActivityLog'
+import LogoutButton from '@/components/LogoutButton'
 
 export default function Dashboard() {
   return (
@@ -51,6 +52,7 @@ export default function Dashboard() {
                 <Settings className="h-5 w-5" />
                 <span>Настройки</span>
               </Link>
+              <LogoutButton />
             </div>
           </div>
         </div>
