@@ -1,0 +1,8 @@
+{
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "framework": "nextjs",
+  "env": {
+    "API_BASE_URL": "@api_base_url"
+  }
+}
